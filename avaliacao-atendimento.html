@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Avaliação de Atendimento</title>
+        <meta name="description" content="Ajude nossa empresa a melhorar sua experiência avaliando o atendimento recebido.">
+    </head>
+    <body>
+        <header>
+            <h1>Avaliação de Atendimento ao Cliente</h1>
+            <p>Avalie nosso atendimento e nos ajude a entender em que podemos melhorar.</p>
+        </header>
+        <main>
+            <!--Introdução-->
+            <section>
+                <h2>Sobre esta avaliação</h2>
+                <p>Este formulário foi <em>desenvolvido</em> para <strong>entender melhor a experiência dos clientes</strong> com nosso atendimento.</p>
+                <p>Suas respostas ajudam a identificar pontos fortes e oportunidades de melhoria em nossos canais de contato.</p>
+                <p>Você encontrará perguntas objetivas, campos de texto, data de atendimento e espaço para comentários adicionais.</p>
+            </section>
+            <!--Pergunta 1: Múltipla escolha-->
+            <section>
+                <h2>Pergunta 1: Como você avalia o atendimento recebido?</h2>
+                <form>
+                    <input type="radio" value="Python" id="p1a" name="pergunta1">
+                    <label for="p1a">Excelente</label><br>
+                    <input type="radio" value="HTML" id="p1b" name="pergunta1">
+                    <label for="p1a">Bom</label><br>
+                    <input type="radio" value="Javascript" id="p1c" name="pergunta1">
+                    <label for="p1a">Regular</label><br>
+                    <input type="radio" value="Ruby" id="p1d" name="pergunta1">
+                    <label for="p1a">Ruim</label><br>
+                </form>
+            </section>
+            <!--Pergunta 2: Texto-->
+            <section>
+                <h2>Pergunta 2: Qual foi o motivo do seu contato com a empresa?"</h2>
+                <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Descreva o motivo...">
+                </form>
+            </section>
+            <!--Pergunta 3: Senha-->
+            <section>
+                <h2>Pergunta 3: Informe o número do protocolo do atendimento</h2>
+                <form>
+                    <input type="password" id="p3" name="pergunta3" placeholder="Digite o protocolo..." >
+                </form>
+            </section>
+            <!--Pergunta 4: Data-->
+            <section>
+                <h2>Pergunta 4: Em qual data você foi atendido?</h2>
+                <form>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+            <!--Pergunta 5: Seleção múltipla-->
+            <section>
+                <h2>Pergunta 5: Quais pontos positivos você identificou no atendimento?</h2>
+                <form>
+                    <input type="checkbox" id="p5a" name="pergunta5" value="Rapidez">
+                    <label for="p5a">Rapidez</label><br>
+                    <input type="checkbox" id="p5b" name="pergunta5" value="Educação">
+                    <label for="p5a">Educação</label><br>
+                    <input type="checkbox" id="p5c" name="pergunta5" value="Clareza nas informações">
+                    <label for="p5a">Clareza nas informações</label><br>
+                    <input type="checkbox" id="p5d" name="pergunta5" value="Resolução do problema">
+                    <label for="p5a">Resolução do problema</label><br>                   
+                </form>
+            </section>
+            <!--Pergunta 6: Upload arquivo-->
+            <section>
+                <h2>Pergunta 6: Envie um arquivo relacionado ao atendimento (opcional)</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+            <!--Pergunta 7: Menu suspenso-->
+            <section>
+                <h2>Pergunta 7: Qual canal de atendimento você utilizou?</h2>
+                <form>
+                    <select name="pergunta7" id="p7">
+                        <option value="whatsApp">WhatsApp</option>
+                        <option value="telefone">Telefone</option>
+                        <option value="e-mail">E-mail</option>
+                        <option value="presencial">Presencial</option>
+                    </select>
+                </form>
+            </section>
+            <!--Pergunta 8: Imagem -->
+            <section>
+                <h2>Pergunta 8: A imagem abaixo representa qual área da empresa?</h2>
+                <figure>
+                    <img src="atendimento.png" alt="Ícone de atendimento ao cliente"><br>
+                    <figcaption>Figura 1</figcaption>
+                </figure>
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+            </section>
+            <!--Tabela de Pontuação-->
+            <section>
+                <h2>Resultado da Avaliação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>    
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Precisamos melhorar muito seu atendimento.</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Seu atendimento foi razoável, mas pode melhorar.</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Você recebeu um bom atendimento.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Excelente! Atendimento de alta qualidade.</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Conte conosco!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!--Lista de respostas-->
+            <section>
+                <h2>Verifique suas respostas</h2>
+                <details>
+                    <summary>Exemplo de respostas esperadas</summary>
+                <ol>
+                    <li>Excelente / Bom / Regular / Ruim</li>
+                    <li>Descrição do motivo do contato</li>
+                    <li>Número de protocolo</li>
+                    <li>Data do atendimento</li>
+                    <li>Rapidez, Educação, Clareza, Resolução</li>
+                    <li>Arquivo opcional</li>
+                    <li>WhatsApp, Telefone, E-mail ou Presencial</li>
+                    <li>Atendimento ao cliente</li>
+                </ol>
+                </details>
+            </section>
+            <!--Formulário de Feedback-->
+            <section>
+                <h2>Deixe seu feedback</h2>
+                <form>
+                    <fieldset>
+                        <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentario">Comentário:</label><br>
+                    <textarea name="comentario" id="comentario"
+                    rows="4" cols="50" placeholder="Conte mais sobre sua experiência..." ></textarea><br>
+                    <button onclick="alert ('Feedback enviado com sucesso!')">Envie o feedback</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 - Sistema de Avaliação de Atendimento</p>
+            <p>Este formulário foi desenvolvido para fins de estudo e simulação de um sistema real de feedback de clientes.</p>
+            <p>Desenvolvido por Sara Beraldo.</p>
+            <p>Conheça meu GitHub, <a href="https://github.com/saraberaldo-tech" target="_blank">clique aqui!</a></p>
+
+        </footer>
+    </body>
+</html>
